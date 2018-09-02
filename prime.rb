@@ -4,9 +4,10 @@ def prime?(num)
     return false
   else
     (2...num).each do |factor|
-      if (num % factor == 1)
-        return true
+      if (num % factor == 0)
+        return false
     end
+    return true 
 end
 
 
